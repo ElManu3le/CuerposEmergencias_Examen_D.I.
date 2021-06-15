@@ -63,8 +63,6 @@ public class PrimaryController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         emergencias = FXCollections.observableArrayList();
 
-        // this.columPolicia.setCellValueFactory(new PropertyValueFactory("nombre"));
-        // this.ApellCol.setCellValueFactory(new PropertyValueFactory("apellidos"));
         this.idColum.setCellValueFactory(new PropertyValueFactory("idUnidad"));
 
         this.udColum.setCellValueFactory(new PropertyValueFactory("tipo_Ud"));
@@ -74,9 +72,6 @@ public class PrimaryController implements Initializable {
         this.nombreTrabajadorColum.setCellValueFactory(new PropertyValueFactory("nombreTrabajador"));
 
         this.provinciasNombre.setCellValueFactory(new PropertyValueFactory("provincia"));
-
-        bomberos = FXCollections.observableArrayList();
-           
 
     }
 
@@ -97,6 +92,7 @@ public class PrimaryController implements Initializable {
 
         if (!this.emergencias.contains(p)) {
 
+            this.emergencias.add(p);
             this.emergencias.add(p);
             this.tblUnidades.setItems(emergencias);
 
