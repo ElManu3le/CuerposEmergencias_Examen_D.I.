@@ -187,7 +187,7 @@ public class PrimaryController implements Initializable {
 
                 String idTrabajador = this.txtIdTrbajador.getText();
 
-                String tipo_Ud = this.txtIdentificacionUd.getText();
+                String tipo_Ud = this.txtNombre.getText();
 
                 String nombreTrabajador = this.txtNombreTrabajador.getText();
 
